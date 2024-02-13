@@ -1,0 +1,72 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  devtools: { enabled: false },
+  modules: ["@pinia/nuxt"],
+  app: {
+    head: {
+      title: "Nuxt Web Template",
+      meta: [
+        { charset: "utf-8" },
+        {
+          name: "viewport",
+          content: "width=device-width, initial-scale=1",
+        },
+        {
+          hid: "description",
+          name: "description",
+          content: "Nuxt Web Template",
+        },
+        {
+          name: "format-detection",
+          content: "telephone=no",
+        },
+      ],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "stylesheet", href: "/css/bootstrap.min.css" },
+        { rel: "stylesheet", href: "/plugin/fontawesome/css/all.css" },
+        { rel: "stylesheet", href: "/plugin/izitoast/dist/css/iziToast.min.css" },
+        { rel: "stylesheet", href: "/plugin/datatables.net-bs4/css/dataTables.bootstrap4.min.css" },
+        { rel: "stylesheet", href: "/plugin/datatables.net-select-bs4/css/select.bootstrap4.min.css" },
+        { rel: "stylesheet", href: "/plugin/datatables-buttons/css/buttons.dataTables.min.css" },
+        { rel: "stylesheet", href: "/plugin/prismjs/themes/prism.css" },
+        { rel: "stylesheet", href: "/plugin/summernote/dist/summernote-bs4.css" },
+        { rel: "stylesheet", href: "/plugin/chocolat/dist/css/chocolat.css" },
+        { rel: "stylesheet", href: "/plugin/bootstrap-daterangepicker/daterangepicker.css" },
+        { rel: "stylesheet", href: "/css/style.css" },
+        { rel: "stylesheet", href: "/css/components.css" },
+        { rel: "stylesheet", href: "/css/custom.css" },
+      ],
+      script: [
+        { type: "text/javascript", src: "/js/jquery-3.3.1.min.js" },
+        { type: "text/javascript", src: "/js/popper.min.js" },
+        { type: "text/javascript", src: "/js/bootstrap.min.js" },
+        { type: "text/javascript", src: "/js/jquery.nicescroll.min.js" },
+        { type: "text/javascript", src: "/js/moment.min.js" },
+        { type: "text/javascript", src: "/plugin/izitoast/dist/js/iziToast.min.js" },
+        { type: "text/javascript", src: "/plugin/datatables/media/js/jquery.dataTables.min.js" },
+        { type: "text/javascript", src: "/plugin/datatables.net-bs4/js/dataTables.bootstrap4.min.js" },
+        { type: "text/javascript", src: "/plugin/datatables-buttons/js/dataTables.buttons.min.js" },
+        { type: "text/javascript", src: "/plugin/datatables.net-select-bs4/js/select.bootstrap4.min.js" },
+        { type: "text/javascript", src: "/plugin/datatables-buttons/js/buttons.bootstrap4.min.js" },
+        { type: "text/javascript", src: "/plugin/prismjs/prism.js" },
+        { type: "text/javascript", src: "/plugin/summernote/dist/summernote-bs4.js" },
+        { type: "text/javascript", src: "/plugin/cleave.js/dist/cleave.min.js" },
+        { type: "text/javascript", src: "/plugin/chocolat/dist/js/jquery.chocolat.min.js" },
+        { type: "text/javascript", src: "/plugin/chart.js/dist/Chart.min.js" },
+        { type: "text/javascript", src: "/plugin/bootstrap-daterangepicker/daterangepicker.js" },
+        { type: "text/javascript", src: "/js/scripts.js" },
+        { type: "text/javascript", src: "/js/custom.js" },
+        { type: "text/javascript", src: "/js/alert.js" },
+        { type: "text/javascript", src: "https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js" },
+      ],
+    },
+  },
+  runtimeConfig: {
+    public: {
+      baseURL: process.env.BASE_URL,
+      baseApi: process.env.BASE_URL_API,
+      baseFile: process.env.BASE_URL_FILES,
+    },
+  },
+});
