@@ -1,4 +1,4 @@
-# eTracking CKB Starter
+# Nuxt Web Template Starter
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -28,4 +28,3 @@ Running production build to PM2:
 ```
 pm2 start ecosystem.config.cjs
 ```
-# nuxt-web-template
